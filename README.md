@@ -7,11 +7,12 @@
 
 ## Requirements
 
-1. Use this url :`https://restcountries.com/v3.1/all`
+1. The url for this task: `https://restcountries.com/v3.1/all`
 2. Use fetch or axios to get the 250 countries in the `App.js`
-3. Only display 6 countries.
-4. Then pass prop from `App.jss` to the `Country.js` component then display the country detail
-5. Each country should have name, region, google map link, image and borders
+3. Only display 6 countries on the screen
+4. The country detail should be in the `Country.js` component
+5. Each country must have name, region, google map link, image and borders
+6. Styling is up to you - Be creative 🇫🇮 🇩🇪 🇳🇴
 
 ## Screenshot
 
