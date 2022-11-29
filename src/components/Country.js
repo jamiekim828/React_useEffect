@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Country({
+  // props from App component
   name,
   region,
   capital,
@@ -9,9 +10,10 @@ export default function Country({
   flag,
   borders,
 }) {
+  // render each country card
   return (
     <div className='country-card'>
-      <img src={flag} alt={name} />
+      <img src={flag} alt={name} className='flag' />
       <h3 className='country-name'>{name}</h3>
       <p>Region: {region}</p>
       <p>Capital: {capital}</p>
@@ -26,15 +28,18 @@ export default function Country({
       <a href={`${map}`} target='_blank' rel='noreferrer'>
         Visit map here
       </a>
-      <ul>
-        {borders
-          ? borders.map((b, i) => (
-              <li key={i} className='borders'>
-                {b}
-              </li>
-            ))
-          : null}
-      </ul>
+      <div className='border-div'>
+        <p>Borders: </p>
+        <ul>
+          {borders
+            ? borders.map((b, i) => (
+                <li key={i} className='borders'>
+                  {b}
+                </li>
+              ))
+            : null}
+        </ul>
+      </div>
     </div>
   );
 }
