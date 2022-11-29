@@ -18,16 +18,21 @@ function App() {
   const slicedArray = country.slice(0, 6);
   return (
     <div className='App'>
-      {slicedArray.map((c, i) => (
-        <Country
-          key={i}
-          name={c.name.official}
-          region={c.region}
-          map={c.maps.googleMaps}
-          flag={c.flag}
-          borders={c.borders}
-        />
-      ))}
+      <h1>Country List</h1>
+      <div className='country-wrapper'>
+        {slicedArray.map((c, i) => (
+          <Country
+            key={i}
+            name={c.name.official}
+            region={c.region}
+            capital={c.capital}
+            languages={c.languages}
+            map={c.maps.googleMaps}
+            flag={c.flags.png}
+            borders={c.borders}
+          />
+        ))}
+      </div>
     </div>
   );
 }
