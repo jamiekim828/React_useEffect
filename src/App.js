@@ -32,6 +32,7 @@ function App() {
           <Country
             key={i}
             name={c.name.official}
+            common={c.name.common}
             region={c.region}
             capital={c.capital}
             languages={c.languages}
